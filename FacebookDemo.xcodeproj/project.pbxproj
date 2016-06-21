@@ -14,6 +14,12 @@
 		505A481D1D163151008CE9BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505A481B1D163151008CE9BA /* LaunchScreen.storyboard */; };
 		505A48281D163151008CE9BA /* FacebookDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A48271D163151008CE9BA /* FacebookDemoTests.swift */; };
 		505A48331D163151008CE9BA /* FacebookDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A48321D163151008CE9BA /* FacebookDemoUITests.swift */; };
+		505A48411D163369008CE9BA /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A48401D163369008CE9BA /* FeedViewController.swift */; };
+		507024331D16387300D82F53 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507024321D16387300D82F53 /* PhotoViewController.swift */; };
+		507024351D16620A00D82F53 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507024341D16620A00D82F53 /* BaseTransition.swift */; };
+		507024371D16621100D82F53 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507024361D16621100D82F53 /* FadeTransition.swift */; };
+		507024391D16633000D82F53 /* PictureTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507024381D16633000D82F53 /* PictureTransition.swift */; };
+		5070243B1D1770F600D82F53 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5070243A1D1770F600D82F53 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		505A482E1D163151008CE9BA /* FacebookDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacebookDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		505A48321D163151008CE9BA /* FacebookDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookDemoUITests.swift; sourceTree = "<group>"; };
 		505A48341D163151008CE9BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		505A48401D163369008CE9BA /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		507024321D16387300D82F53 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		507024341D16620A00D82F53 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
+		507024361D16621100D82F53 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
+		507024381D16633000D82F53 /* PictureTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureTransition.swift; sourceTree = "<group>"; };
+		5070243A1D1770F600D82F53 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +112,14 @@
 				505A48121D163151008CE9BA /* AppDelegate.swift */,
 				505A48141D163151008CE9BA /* ViewController.swift */,
 				505A48161D163151008CE9BA /* Main.storyboard */,
+				505A48401D163369008CE9BA /* FeedViewController.swift */,
+				507024321D16387300D82F53 /* PhotoViewController.swift */,
+				5070243A1D1770F600D82F53 /* Common.swift */,
 				505A48191D163151008CE9BA /* Assets.xcassets */,
 				505A481B1D163151008CE9BA /* LaunchScreen.storyboard */,
+				507024341D16620A00D82F53 /* BaseTransition.swift */,
+				507024361D16621100D82F53 /* FadeTransition.swift */,
+				507024381D16633000D82F53 /* PictureTransition.swift */,
 				505A481E1D163151008CE9BA /* Info.plist */,
 			);
 			path = FacebookDemo;
@@ -256,7 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5070243B1D1770F600D82F53 /* Common.swift in Sources */,
 				505A48151D163151008CE9BA /* ViewController.swift in Sources */,
+				507024351D16620A00D82F53 /* BaseTransition.swift in Sources */,
+				507024331D16387300D82F53 /* PhotoViewController.swift in Sources */,
+				507024391D16633000D82F53 /* PictureTransition.swift in Sources */,
+				505A48411D163369008CE9BA /* FeedViewController.swift in Sources */,
+				507024371D16621100D82F53 /* FadeTransition.swift in Sources */,
 				505A48131D163151008CE9BA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +506,7 @@
 				505A48391D163151008CE9BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		505A483A1D163151008CE9BA /* Build configuration list for PBXNativeTarget "FacebookDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +515,7 @@
 				505A483C1D163151008CE9BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		505A483D1D163151008CE9BA /* Build configuration list for PBXNativeTarget "FacebookDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +524,7 @@
 				505A483F1D163151008CE9BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
